@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">PraticaV</string>
+    <string name="criar_conta_corrente">Criar Conta Corrente</string>
+    <string name="criar_conta">Criar Conta</string>
+    <string name="pratica_v_qualidade_de_software">Pratica V - Qualidade de Software</string>
+    <string name="depositar_na_conta">Depositar</string>
+    <string name="sacar_de_uma_conta">Sacar</string>
+    <string name="consultar_saldo_de_uma_conta">Consultar Saldo</string>
+    <string name="texto_criar_conta">Preencha os dados para criar uma conta</string>
+    <string name="nome">Nome</string>
+    <string name="telefone">Telefone</string>
+    <string name="data_de_nascimento">Data de Nascimento</string>
+    <string name="dep_sito">Depósito</string>
+    <string name="valor_a_ser_depositado">Valor a ser depositado na conta</string>
+    <string name="valor">Valor</string>
+    <string name="depositar">Depositar</string>
+    <string name="saque">Saque</string>
+    <string name="valor_a_ser_sacado_da_conta">Valor a ser Sacado da Conta</string>
+    <string name="sacar">Sacar</string>
 </resources>

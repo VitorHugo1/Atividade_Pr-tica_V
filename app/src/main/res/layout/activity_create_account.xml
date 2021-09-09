@@ -4,18 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroud_gray"
+    tools:context=".CreateAccountActivity"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:background="@color/backgroud_gray">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:text="@string/texto_criar_conta"
         android:gravity="center"
-        android:text="@string/pratica_v_qualidade_de_software"
         android:textColor="@color/black"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nome"
+        android:layout_marginHorizontal="30dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/telefone"
+        android:layout_marginHorizontal="30dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/Birth"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/data_de_nascimento"
+        android:layout_marginHorizontal="30dp"
+        android:textColor="@color/black"/>
+
 
     <Button
         android:id="@+id/btnCreateAccount"
@@ -24,33 +52,6 @@
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="50dp"
         android:background="@color/teal_700"
-        android:text="@string/criar_conta_corrente" />
-
-    <Button
-        android:id="@+id/btnDeposit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="50dp"
-        android:background="@color/teal_700"
-        android:text="@string/depositar_na_conta" />
-
-    <Button
-        android:id="@+id/btnWithdraw"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="50dp"
-        android:background="@color/teal_700"
-        android:text="@string/sacar_de_uma_conta" />
-
-    <Button
-        android:id="@+id/btnBalanceCheck"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="50dp"
-        android:background="@color/teal_700"
-        android:text="@string/consultar_saldo_de_uma_conta" />
+        android:text="@string/criar_conta"/>
 
 </LinearLayout>

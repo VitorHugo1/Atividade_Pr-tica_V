@@ -4,27 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroud_gray"
+    tools:context=".DepositActivity"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:background="@color/backgroud_gray">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:gravity="center"
-        android:text="@string/pratica_v_qualidade_de_software"
+        android:text="@string/dep_sito"
         android:textColor="@color/black"
         android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/btnCreateAccount"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/valor_a_ser_depositado"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/DepositValue"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:hint="@string/valor"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="50dp"
-        android:background="@color/teal_700"
-        android:text="@string/criar_conta_corrente" />
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/btnDeposit"
@@ -33,24 +44,8 @@
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="50dp"
         android:background="@color/teal_700"
-        android:text="@string/depositar_na_conta" />
+        android:text="@string/depositar"/>
 
-    <Button
-        android:id="@+id/btnWithdraw"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="50dp"
-        android:background="@color/teal_700"
-        android:text="@string/sacar_de_uma_conta" />
 
-    <Button
-        android:id="@+id/btnBalanceCheck"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="50dp"
-        android:background="@color/teal_700"
-        android:text="@string/consultar_saldo_de_uma_conta" />
 
 </LinearLayout>

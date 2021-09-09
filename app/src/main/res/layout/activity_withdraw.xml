@@ -4,36 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".WithdrawActivity"
     android:background="@color/backgroud_gray"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:gravity="center"
-        android:text="@string/pratica_v_qualidade_de_software"
+        android:text="@string/saque"
         android:textColor="@color/black"
         android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/btnCreateAccount"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="50dp"
-        android:background="@color/teal_700"
-        android:text="@string/criar_conta_corrente" />
+        android:text="@string/valor_a_ser_sacado_da_conta"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginTop="50dp"/>
 
-    <Button
-        android:id="@+id/btnDeposit"
+    <EditText
+        android:id="@+id/DepositValue"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:hint="@string/valor"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="50dp"
-        android:background="@color/teal_700"
-        android:text="@string/depositar_na_conta" />
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/btnWithdraw"
@@ -42,15 +44,7 @@
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="50dp"
         android:background="@color/teal_700"
-        android:text="@string/sacar_de_uma_conta" />
+        android:text="@string/sacar"/>
 
-    <Button
-        android:id="@+id/btnBalanceCheck"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="50dp"
-        android:background="@color/teal_700"
-        android:text="@string/consultar_saldo_de_uma_conta" />
 
 </LinearLayout>
