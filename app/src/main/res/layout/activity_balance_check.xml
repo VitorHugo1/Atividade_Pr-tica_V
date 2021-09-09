@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="right"
-            android:text="Seu Saldo é de:"
+            android:text="@string/seu_saldo_de"
             android:textColor="@color/black"
             android:textSize="15sp" />
 

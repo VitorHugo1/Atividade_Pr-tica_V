@@ -19,4 +19,5 @@
     <string name="sacar">Sacar</string>
     <string name="consulta_saldo">Consulta Saldo</string>
     <string name="mostre_meu_saldo">Moste meu Saldo</string>
+    <string name="seu_saldo_de">Seu Saldo é de:</string>
 </resources>
