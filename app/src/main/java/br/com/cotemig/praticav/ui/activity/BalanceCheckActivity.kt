@@ -18,8 +18,10 @@ class BalanceCheckActivity : AppCompatActivity() {
         var balanceValue = findViewById<TextView>(R.id.balanceValue)
 
 
-        btnShowBalance.setOnClickListener {
 
+        btnShowBalance.setOnClickListener {
+            var balance = Account().balanceCheck(accountNumber.text.toString().toInt())
+            balanceValue.text = balance.toString()
         }
 
 

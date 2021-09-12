@@ -19,11 +19,9 @@ class DepositActivity : AppCompatActivity() {
         var btnDeposit = findViewById<Button>(R.id.btnDeposit)
 
         btnDeposit.setOnClickListener {
-            var conta = Account(depositAccountNumber.text.toString().toInt())
 
-            Toast.makeText(this, "conta: ${conta.accountNumber}", Toast.LENGTH_LONG).show()
-            if (conta.checkAccountExist(depositAccountNumber.text.toString().toInt())){
-                conta.depositValue(value.text.toString().toDouble())
+            if (Account().accountNumber == (depositAccountNumber.text.toString().toInt())){
+                Account().depositValue(value.text.toString().toDouble())
                 Toast.makeText(this, "Deposito Realizado", Toast.LENGTH_LONG).show()
             } else{
                 Toast.makeText(this, "A conta ${depositAccountNumber.text} não existe", Toast.LENGTH_LONG).show()

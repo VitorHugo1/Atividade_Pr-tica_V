@@ -23,15 +23,9 @@ class CreateAccountActivity : AppCompatActivity() {
 
 
         btnCreateAccount.setOnClickListener {
-            var account = Account(Random.nextInt(1,10))
+            var account = Account()
             Toast.makeText(this, "Conta ${account.accountNumber} Criada", Toast.LENGTH_LONG).show()
         }
 
     }
-
-    fun createAccount(){
-
-    }
-
-
 }
