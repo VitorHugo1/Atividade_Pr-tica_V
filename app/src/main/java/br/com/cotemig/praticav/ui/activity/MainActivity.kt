@@ -1,9 +1,10 @@
-package br.com.cotemig.praticav
+package br.com.cotemig.praticav.ui.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import br.com.cotemig.praticav.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

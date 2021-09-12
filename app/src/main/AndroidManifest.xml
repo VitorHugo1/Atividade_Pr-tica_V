@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PraticaV">
-        <activity android:name=".BalanceCheckActivity"></activity>
-        <activity android:name=".WithdrawActivity" />
-        <activity android:name=".DepositActivity" />
-        <activity android:name=".CreateAccountActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.activity.BalanceCheckActivity"></activity>
+        <activity android:name=".ui.activity.WithdrawActivity" />
+        <activity android:name=".ui.activity.DepositActivity" />
+        <activity android:name=".ui.activity.CreateAccountActivity" />
+        <activity android:name=".ui.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
