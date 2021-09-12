@@ -27,7 +27,7 @@
         android:text="@string/criar_conta_corrente" />
 
     <Button
-        android:id="@+id/btnDeposit"
+        android:id="@+id/btnMenuDeposit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"

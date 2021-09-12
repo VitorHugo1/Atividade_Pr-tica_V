@@ -16,8 +16,8 @@ class MainActivity : AppCompatActivity() {
             showCreateAccount()
         }
 
-        var btnDeposit = findViewById<Button>(R.id.btnDeposit)
-        btnDeposit.setOnClickListener {
+        var btnMenuDeposit = findViewById<Button>(R.id.btnMenuDeposit)
+        btnMenuDeposit.setOnClickListener {
             showDeposit()
         }
 

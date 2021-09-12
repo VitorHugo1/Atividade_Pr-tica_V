@@ -16,5 +16,15 @@ class Account {
         this.balance = 0.0
         this.accountNumber = Random.nextInt(1,10)
     }
+
+    fun chekAccountExist(number : Int) : Boolean{
+        return number == this.accountNumber
+    }
+
+    fun depositValue(value : Double){
+        if (value > 0){
+            this.balance += value
+        }
+    }
 }
 

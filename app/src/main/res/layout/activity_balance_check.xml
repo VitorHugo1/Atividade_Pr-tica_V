@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroud_gray"
     android:orientation="vertical"
-    tools:context=".ui.activity.BalanceCheckActivity"
-    android:background="@color/backgroud_gray">
+    tools:context=".ui.activity.BalanceCheckActivity">
 
 
     <TextView
@@ -18,20 +18,29 @@
         android:textColor="@color/black"
         android:textSize="20sp" />
 
-
-    <Button
-        android:id="@+id/btnDeposit"
+    <EditText
+        android:id="@+id/accountNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="70dp"
+        android:hint="@string/numero_da_conta" />
+
+
+    <Button
+        android:id="@+id/btnShowBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
         android:background="@color/teal_700"
         android:text="@string/mostre_meu_saldo" />
 
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_marginTop="50dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -42,17 +51,18 @@
             android:gravity="right"
             android:text="@string/seu_saldo_de"
             android:textColor="@color/black"
-            android:textSize="15sp" />
+            android:textSize="20sp" />
 
         <TextView
+            android:id="@+id/balanceValue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:gravity="left"
-            android:layout_marginLeft="10dp"
             android:text=""
             android:textColor="@color/black"
-            android:textSize="15sp" />
+            android:textSize="25sp" />
 
     </LinearLayout>
 

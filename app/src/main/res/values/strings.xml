@@ -20,4 +20,5 @@
     <string name="consulta_saldo">Consulta Saldo</string>
     <string name="mostre_meu_saldo">Moste meu Saldo</string>
     <string name="seu_saldo_de">Seu Saldo é de:</string>
+    <string name="numero_da_conta">Numero da Conta</string>
 </resources>
