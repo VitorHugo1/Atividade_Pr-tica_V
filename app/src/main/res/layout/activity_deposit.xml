@@ -27,7 +27,7 @@
         android:textSize="15sp" />
 
     <EditText
-        android:id="@+id/accountNumber"
+        android:id="@+id/depositAccountNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"

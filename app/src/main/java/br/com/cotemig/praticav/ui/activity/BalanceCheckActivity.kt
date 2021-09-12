@@ -16,7 +16,7 @@ class BalanceCheckActivity : AppCompatActivity() {
         var accountNumber = findViewById<EditText>(R.id.accountNumber)
         var btnShowBalance = findViewById<Button>(R.id.btnShowBalance)
         var balanceValue = findViewById<TextView>(R.id.balanceValue)
-        var account = Account()
+
 
         btnShowBalance.setOnClickListener {
 
