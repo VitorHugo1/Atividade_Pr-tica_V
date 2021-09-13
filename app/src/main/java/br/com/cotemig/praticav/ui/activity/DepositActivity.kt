@@ -17,11 +17,11 @@ class DepositActivity : AppCompatActivity() {
         var depositAccountNumber = findViewById<EditText>(R.id.depositAccountNumber)
         var value = findViewById<EditText>(R.id.depositValue)
         var btnDeposit = findViewById<Button>(R.id.btnDeposit)
+        var account = intent.getSerializableExtra("account") as Account
 
         btnDeposit.setOnClickListener {
-
-            if (Account().accountNumber == (depositAccountNumber.text.toString().toInt())){
-                Account().depositValue(value.text.toString().toDouble())
+            if (account.accountNumber == (depositAccountNumber.text.toString().toInt())){
+                account.depositValue(value.text.toString().toDouble())
                 Toast.makeText(this, "Deposito Realizado", Toast.LENGTH_LONG).show()
             } else{
                 Toast.makeText(this, "A conta ${depositAccountNumber.text} não existe", Toast.LENGTH_LONG).show()

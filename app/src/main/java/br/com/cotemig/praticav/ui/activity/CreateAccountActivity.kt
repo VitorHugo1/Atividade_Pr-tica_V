@@ -1,6 +1,7 @@
 package br.com.cotemig.praticav.ui.activity
 
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -24,6 +25,8 @@ class CreateAccountActivity : AppCompatActivity() {
 
         btnCreateAccount.setOnClickListener {
             var account = Account()
+            var intent = Intent(this, DepositActivity::class.java)
+            intent.putExtra("account", account)
             Toast.makeText(this, "Conta ${account.accountNumber} Criada", Toast.LENGTH_LONG).show()
         }
 
